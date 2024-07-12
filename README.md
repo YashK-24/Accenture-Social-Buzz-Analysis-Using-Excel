@@ -3,7 +3,7 @@
 
 ![alt text](Images/accenturelogo.JPG)
 
-This project is part of Accenture's virtual job simulation
+This project is part of Accenture's virtual job simulation on Forage.
 
 # Table of Contents
 1. [Introduction](#introduction)
