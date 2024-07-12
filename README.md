@@ -1,6 +1,7 @@
 # Accenture-Social-Buzz-Analysis-Using-Excel
 <b></b>
-![alt text](image-22.png)
+
+![alt text](Images/accenturelogo.JPG)
 
 This project is part of Accenture's virtual job simulation
 
@@ -91,7 +92,7 @@ Data cleaning is a common and very important task when working with data.
 
 1.	Cleaning Contents.csv file
 
-![alt text](image.png)
+![alt text](Images/image.jpg)
 
 There are 6 columns in this dataset.
 +	We don’t need the _"URL column"_ because it doesn’t provide any quantitative measure for the top 5 categories. Therefore, we will delete it.
