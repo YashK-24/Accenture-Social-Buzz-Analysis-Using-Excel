@@ -98,7 +98,7 @@ There are 6 columns in this dataset.
 +	We don’t need the _"URL column"_ because it doesn’t provide any quantitative measure for the top 5 categories. Therefore, we will delete it.
 +	For the same reason we will also delete the _"User id"_ column.
 + Next, let's check the _"Category"_ column
-![alt text](image-1.png)
+![alt text](Images/image1.jpg)
 <b>
 </b>
 
@@ -106,41 +106,41 @@ There are 6 columns in this dataset.
 
 One way of doing this in Excel is by using the "find and replace toolbox". You can manually go to the home ribbon and select find and replace under the editing section or press “ctrl + F” to open the find and replace dialogue box.
 
-![alt text](image-2.png)
+![alt text](Images/image2.jpg)
 
 Under the “find what section”, enter " symbol, and then hit "replace all" to clean the category column.
 
 + Change the column name "type" to "content type" to make the data more consistent.
 
-![alt text](image-3.png)
+![alt text](Images/image3.jpg)
 
 Now this dataset is cleaned, let’s check Reactions.xlsx.
 <b></b>
 
 2.	Reactions.csv
 
-![alt text](image-20.png)
+![alt text](Images/image20.jpg)
 
 + This dataset contains _7_ columns. Let’s do some data checking and see if we can find any missing values. We can select the whole data and apply the filter function to see if there are any blank values.
 
-![alt text](image-5.png)
+![alt text](Images/image5.jpg)
 
 The "User id" and "Type" columns contain blank values. The type column is important for our analysis.
 
 + To remove them we can select the "Type" column and apply the filter function to select the blank value and then delete them from our dataset.
 
-![alt text](image-6.png)
+![alt text](Images/image6.jpg)
 
 To delete, select the (Blanks) row, after selecting them hit the delete button on your keyboard or left-click on your mouse while selecting any cell in the data and select the “delete row” option.
 
-![alt text](image-7.png)
+![alt text](Images/image7.jpg)
 
 + Also let’s delete the “User Id” column and the "first" column from all the datasets as they have no use in your analysis.
 <b></b>
 
 3.	ReactionTypes.csv
 
-![alt text](image-8.png)
+![alt text](Images/image8.jpg)
 
 This dataset does not contain any missing values.
 
@@ -155,22 +155,22 @@ We will keep the Reaction.xlsx as our base file. Then we will merge the data fro
 + Let’s merge data from the Contents.cvs first. We want to merge the content type and category column to our Reactions.csv file. We will use Vlookup formula to do that.
 + In our Reactions.csv file first create a column called "Content Type" and select the first cell in that column. Then apply the Vlookup formula.
 
-![alt text](image-9.png)
+![alt text](Images/image9.jpg)
 
 
 + Then apply autofill to populate the remaining cells in the "Content Type" column.
 + Again, use the Vlookup formula to merge the "Category" column in the "Reactions.csv" file.
 
-![alt text](image-10.png)
+![alt text](Images/image10.jpg)
 
 + We have successfully merged the data from "Contents.csv" to the "Reaction.csv".
 
-![alt text](image-11.png)
+![alt text](Images/image11.jpg)
 
 + Now, let’s merge data from **ReactionTypes.csv**
 + First create two columns in the Reactions.csv called "Sentiment" and "Reaction_Score". Then apply the VLookup formula to merge the data from ReactionTypes.csv to Reactions.csv. We will use the value from the Reaction Type column as the lookup value in the Vlookup formula.
 
-![alt text](image-12.png)
+![alt text](Images/image12.jpg)
 
 + We have successfully merged the data.
 + Now, save the Reaction.csv file into excel workbook format.
@@ -183,40 +183,40 @@ Now that we have the data which is required to do our analysis, let’s identify
 + First, create a new sheet in the “Reactions workbook”, called “Aggregated Score”.
 + Copy the values from the Category column, hover over the paste section and select the second option.
 
-![alt text](image-13.png)
+![alt text](Images/image13.jpg)
 
 + Do this step for all the merged columns so that there will be no errors if you want to copy these merged values in other sheets.
 + Then copy the values from the "Category" column in the "Reactions" sheet to the "Aggregated Score".
 + After copying that click on the “Remove Duplicates” option in the Data tools section in the Data ribbon, to get the original **16 categories**.
 
-![alt text](image-14.png)
+![alt text](Images/image14.jpg)
 
 + Create a "Score" column to get the aggregate score of all the categories by using the SUMIF formula.
 
-![alt text](image-15.png)
+![alt text](Images/image15.jpg)
 
 + Then we will just Autofill the remaining cells to populate them.
 + Again, copy the "Score" column and paste it by selecting the 2nd column in the pate section.
 
-![alt text](image-16.png)
+![alt text](Images/image16.jpg)
 
 + Sort the values in the descending order to get the top 5 categories. 
 + Create a new sheet called the “Top 5 Categories” and paste only the first 6 cells from the “Aggregated Score” sheet.
 
-![alt text](image-21.png)
+![alt text](Images/image21.jpg)
 
 There we have it; we have successfully identified the top 5 Content categories in our client’s website.
 
 # Additional Analysis 
 + Let’s dive into the popularity percentage share of each category.
 
-![alt text](image-18.png)
+![alt text](Images/image18.jpg)
 
 The **“animal”** category has a **21.4%** percentage share of popularity followed by the **“science”** category with **20.3%**.
 
 Let’s find the month with the greatest number of posts.
 
-![alt text](image-19.png)
+![alt text](Images/image19.jpg)
 
 We can see the that month where most posts were posted is **May, (2,138 posts)**. 
 
